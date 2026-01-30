@@ -1,0 +1,116 @@
+.footer {
+    background-color: #1a1d29;
+    color: #a1a4b3;
+    padding: 60px 0 30px;
+    font-size: 0.95rem;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.footer p {
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* Section titles */
+.footer h5 {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer h5::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 2px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+/* Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #a1a4b3;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    padding-left: 6px;
+}
+
+/* Contact list icons */
+.footer-links li i {
+    color: var(--primary);
+    margin-right: 8px;
+}
+
+/* Social icons */
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    transform: translateY(-3px);
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    font-size: 0.85rem;
+    color: #8b8e9d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer h5::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

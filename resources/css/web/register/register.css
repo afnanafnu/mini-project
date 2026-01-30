@@ -1,0 +1,76 @@
+/* Scoped container for auth pages */
+.auth-container {
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Heading */
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #111827;
+    font-weight: 600;
+}
+
+/* Form fields */
+.auth-container input[type="text"],
+.auth-container input[type="email"],
+.auth-container input[type="password"] {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    margin: 0.4rem 0 1rem 0;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+}
+
+.auth-container input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* Submit button */
+.auth-container button[type="submit"] {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 1rem;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.auth-container button[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+/* Error messages */
+.auth-container .text-danger {
+    font-size: 0.85rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Links */
+.auth-container a {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
